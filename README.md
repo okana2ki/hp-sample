@@ -1,1 +1,1 @@
-# HPsample
+# hp-sample
