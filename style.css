@@ -79,6 +79,52 @@ button:hover {
     background-color: #2563eb;
 }
 
+/* ダウンロードボタンエリアのスタイル */
+.download-list {
+    /* 通常のリストの点を消す */
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    display: flex;              /* 横並びにする */
+    flex-wrap: wrap;            /* 画面が小さいときは折り返す */
+    gap: 0.75rem;               /* ボタン間の余白 */
+}
+
+.download-list li {
+    margin: 0;
+}
+
+.download-btn {
+    display: inline-flex;       /* アイコンと文字を横並びにする */
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;                /* アイコンとテキストの間の余白 */
+    text-align: center;
+    background-color: #3b82f6;
+    color: white;
+    text-decoration: none;
+    padding: 0.9rem 1.2rem;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.download-btn:hover {
+    background-color: #2563eb;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 12px rgba(37, 99, 235, 0.2);
+}
+
+.download-btn:active {
+    transform: translateY(0);
+}
+
+/* ダウンロードアイコンのサイズ調整 */
+.download-icon {
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
 input {
     width: 100%;
     padding: 0.8rem;
